@@ -1,1 +1,77 @@
-/* You can add global styles to this file, and also import other style files */
+html, body { height: 100%; }
+body { 
+  margin: 0; 
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: rgb(231, 228, 228); 
+}
+
+h3 {
+  font-weight: 500 !important;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.color-red {
+  color: red;
+}
+
+.color-green {
+  color: green;
+}
+
+.mr-2 {
+  margin-right: 1rem !important;
+}
+
+.ml-2 {
+  margin-left: 1rem !important;
+}
+
+.ds-flex-center {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(240, 245, 245);
+  width: 100%;
+  justify-content: space-around;
+}
+
+.ds-content-page {
+  display: flex;
+  width: 100%;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.ds-content-page-card {
+  width: 30%;
+}
+
+@media (max-width: 860px) {
+  .ds-content-page-card {
+    width: 45%;
+  }
+}
+@media (max-width: 600px) {
+  .ds-content-page-card {
+    width: 90%;
+  }
+}
+
+.ds-card {
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+ .ds-btn-save{
+   color: white;
+   background-color: rgb(14, 124, 14);
+ }
+
+ .ds-btn-reset{
+  color: white;
+  background-color: rgb(129, 143, 8);
+}

@@ -1,0 +1,14 @@
+<mat-card>
+  <section class="ds-card">
+    <section>
+      <h3>{{datos.nombre}}</h3>
+      <p>
+        {{datos.descripcion}}
+      </p>
+    </section>
+    <section class="ds-flex-center">
+      <button mat-button (click)="btnEditar()">Editar</button>
+      <button mat-button (click)="btnEliminar()">Eliminar</button>
+    </section>
+  </section>
+</mat-card>

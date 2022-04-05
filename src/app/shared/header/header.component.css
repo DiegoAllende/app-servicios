@@ -1,0 +1,16 @@
+.ds-header{
+  height: 8vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ds-header-titulo{
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .ds-header{
+    flex-direction: column;
+    height: 12vh;
+  }
+}

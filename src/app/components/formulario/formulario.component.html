@@ -1,0 +1,31 @@
+<mat-card>
+  <section>
+    <h3>Servicio</h3>
+    <form novalidate autocomplete="off" [formGroup]="formu" (submit)="btnGuardar()">
+      <section>
+        <mat-form-field class="full-width">
+          <mat-label>Nombre:</mat-label>
+          <input matInput formControlName="nombre" placeholder="Ingrese nombre ..." maxlength="20">
+        </mat-form-field>
+
+        <mat-form-field class="full-width">
+          <mat-label>Descripción:</mat-label>
+          <textarea matInput formControlName="descripcion" placeholder="Ingrese descripción ..." rows="4"
+            maxlength="150"></textarea>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="full-width">
+          <mat-label>Tipo:</mat-label>
+          <mat-select formControlName="tipo">
+            <mat-option *ngFor="let item of comboServicios" [value]="item.codigo">{{item.valor}}</mat-option>
+          </mat-select>
+        </mat-form-field>
+
+      </section>
+      <section>
+        <button mat-stroked-button class="ds-btn-save mr-2" type="submit">Grabar</button>
+        <button mat-stroked-button class="ds-btn-reset" (click)="btnCancelar()">Cancelar</button>
+      </section>
+    </form>
+  </section>
+</mat-card>

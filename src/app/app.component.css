@@ -1,0 +1,56 @@
+.ds-main{
+  max-width: 100%;
+  background-color: rgb(231, 228, 228); 
+  margin: 0 auto;
+  min-height: 92vh;
+  padding: 24px;
+  box-sizing: border-box;
+  display: flex;
+  gap: 20px;
+}
+
+.ds-main-page {
+  width: 70%;
+}
+
+.ds-main-form {
+  width: 30%;
+}
+
+@media (max-width: 860px) {
+  .ds-main-page {
+    width: 60%;
+  }
+  
+  .ds-main-form {
+    width: 40%;
+  }
+}
+
+@media (max-width: 600px) {
+  .ds-main{
+    min-height: 88vh;
+  }
+
+  .ds-main-page {
+    width: 50%;
+  }
+  
+  .ds-main-form {
+    width: 50%;
+  }
+}
+
+@media (max-width: 450px) {
+  .ds-main {
+    flex-direction: column-reverse;
+  }
+
+  .ds-main-page {
+    width: 100%;
+  }
+  
+  .ds-main-form {
+    width: 100%;
+  }
+}

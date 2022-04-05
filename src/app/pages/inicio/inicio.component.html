@@ -1,0 +1,5 @@
+<section class="ds-content-page">
+  <article *ngFor="let fila of listaServicios" class="ds-content-page-card">
+    <app-tarjeta [id]="fila.id" [datos]="fila"></app-tarjeta>
+  </article>
+</section>
